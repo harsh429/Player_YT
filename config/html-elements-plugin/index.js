@@ -31,13 +31,7 @@ const RE_ENDS_WITH_BS = /\/$/;
 /**
  * Create an HTML tag with attributes from a map.
  *
- * Example:
- * createTag('link', { rel: "manifest", href: "/assets/manifest.json" })
- * // <link rel="manifest" href="/assets/manifest.json">
- * @param tagName The name of the tag
- * @param attrMap A Map of attribute names (keys) and their values.
- * @param publicPath a path to add to eh start of static asset url
- * @returns {string}
+
  */
 function createTag(tagName, attrMap, publicPath) {
   publicPath = publicPath || '';
@@ -71,23 +65,7 @@ function createTag(tagName, attrMap, publicPath) {
 
 /**
  * Returns a string representing all html elements defined in a data source.
- *
- * Example:
- *
- *    const ds = {
- *      link: [
- *        { rel: "apple-touch-icon", sizes: "57x57", href: "/assets/icon/apple-icon-57x57.png" }
- *      ],
- *      meta: [
- *        { name: "msapplication-TileColor", content: "#00bcd4" }
- *      ]
- *    }
- *
- * getHeadTags(ds);
- * // "<link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">"
- *    "<meta name="msapplication-TileColor" content="#00bcd4">"
- *
- * @returns {string}
+ 
  */
 function getHtmlElementString(dataSource, publicPath) {
   return Object.getOwnPropertyNames(dataSource)
