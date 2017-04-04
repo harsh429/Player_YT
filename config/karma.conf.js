@@ -10,11 +10,7 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (e.g. files, exclude)
     basePath: '',
 
-    /*
-     * Frameworks to use
-     *
-     * available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-     */
+   
     frameworks: ['jasmine'],
 
     // list of files to exclude
