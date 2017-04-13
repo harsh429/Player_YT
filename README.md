@@ -20,5 +20,5 @@ npm start
 # use Hot Module Replacement (disabled for now)
 # npm run server:dev:hmr
 ```
-go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser
+go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser.
 
